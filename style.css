@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+:root {
+  --primary-color: #a9b388;
+  --font-color: #111;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(110deg, #5f6f52, #a9b388);
+  letter-spacing: 0.03rem;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  width: 70vmin;
+  padding: 1.8em 2.3em;
+}
+
+.new-task {
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  padding: 1.8em 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-task input {
+  position: relative;
+  width: 75%;
+  height: 8vmin;
+  font-size: 2.2 vmin;
+  padding: 1em 1em;
+  color: var(--font-color);
+  border: 2px solid #d1d3d4;
+  font-weight: 500;
+  border-radius: 999px;
+}
+
+.new-task input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.new-task .add {
+  position: relative;
+  border: none;
+  outline: none;
+  height: 8vmin;
+  width: 15%;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.new-task .add i {
+  font-size: 3.5vmin;
+}
+
+.tasks {
+  position: relative;
+  background-color: #fff;
+  padding: 1.8em 1.5em;
+  border-radius: 8px;
+  margin-top: 1.7em;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.tasks .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vmin;
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+  border-bottom: 2px solid #d1d3d4;
+}
+
+.task p {
+  font-size: 2.4vmin;
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+.task .delete {
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  height: 100%;
+  width: 13%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.delete i {
+  font-size: 2.4vmin;
+}
+
+.completed {
+  text-decoration: line-through;
+}
